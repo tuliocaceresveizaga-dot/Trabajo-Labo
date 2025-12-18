@@ -8,5 +8,6 @@ class LinearRegressionTest{
         var lr=LinearRegression.fit(d,Transformer.identity());
         assertEquals(2,lr.getA(),1e-9);
         assertEquals(3,lr.getB(),1e-9);
+        assertEquals(1.0,lr.getRSquared(),1e-9);
     }
 }
